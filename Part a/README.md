@@ -56,19 +56,27 @@
 - matplotlib
 - Kaggle environment (optional)
 
+# Testing
+- After identifying the best config, the model is retrained and evaluated on:
+  - Training Set
+  - Validation Set
+  - Test Set (`val/`)
 
-##  Running the Code
+- Predictions are visualized using a **10×3 grid** of sample images and their predicted labels
+   Each row corresponds to one class, Each column shows a sample image with the predicted label ,The visualization is logged to W&B via `wandb.Image(fig)`
 
-### 1. Install Weights & Biases and login:
-```python
-!pip install wandb
-import wandb
-wandb.login(key="YOUR_WANDB_API_KEY")
-```
+#  Best hyperparametrs obtained :
+- num_filters =	64
+- filter_org = double
+- act_fn = GELU
+- dropout_rate = 0.3
+- batch_norm = True
+- data_augmentation = True
+- num_neurons = 256
+- learning_rate = 0.001
+- batch_size = 64
+- kernel_size = [3, 5, 5, 7, 7]
+- l2_reg = 0.0005
+- epochs = 20
 
-### 2. Start a sweep:
-```python
-sweep_id = wandb.sweep(sweep_config, project="q2_assign2_exp7")
-wandb.agent(sweep_id, function=train, count=30)
-```
-
+# Test accuracy obtained : 34.90%
