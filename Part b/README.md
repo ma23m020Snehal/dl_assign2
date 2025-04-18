@@ -1,5 +1,7 @@
 # Fine-Tuning a Pre-Trained Model on iNaturalist Dataset
 
+ I have created this notebook in kaggle.
+
 This notebook shows **fine-tuning a pre-trained model (ResNet50)** on the **iNaturalist dataset** using **PyTorch**. 
 
 The workflow includes setting up the environment, loading data, modifying architecture, training, validation, and logging experiments with **Weights & Biases (wandb)**.
