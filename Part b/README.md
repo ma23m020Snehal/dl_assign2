@@ -62,21 +62,6 @@ Run the notebook using `Kaggle` or any Jupyter environment.
    - Logs metrics and images to Weights & Biases
 
 
-## Sample Command-line Usage (if converted to script)
-
-```bash
-python train.py \
-  --model resnet \
-  --epochs 5 \
-  --batch_size 32 \
-  --freeze_percentage 0.8 \
-  --freeze_all_except_last_layer Yes \
-  --wandb_project fine_tune_inat \
-  --wandb_entity your_username
-```
-
----
-
 ## Sample Output
 
 - **Validation Accuracy: 78.58929 (maximum)**
