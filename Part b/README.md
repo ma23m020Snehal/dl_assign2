@@ -88,14 +88,3 @@ python train.py \
     metric: Validation accuracy
     goal: Maximize }
 Maximum validation accuracy: 78.58929 %  over 31 epochs
--
-
-
-
-## Acknowledgements
-
-- [iNaturalist 12K Dataset](https://www.kaggle.com/competitions/inaturalist-12k-image-classification)
-- [torchvision.models](https://pytorch.org/vision/stable/models.html)
-- [Weights & Biases](https://wandb.ai/)
-
-
