@@ -73,6 +73,14 @@ Run the notebook using `Kaggle` or any Jupyter environment.
     goal: Maximize }
 Maximum validation accuracy: 78.58929 %  over 31 epochs
 
+## code organisation 
+```
+/Part b/
+├── README.md                    # Description and hyperparameter info for Part A
+├── part-b-latest-fine-tuning-a-pre-trained-model.ipynb    # experiments
+├── partb-test.ipynb              # Notebook for final evaluation and visualization
+└── trainb.py                     # Main training script using CLI argparse
+```
 
 ## trainb.py file 
 fine-tuned a pretrained ResNet50 model on the iNaturalist dataset using PyTorch, with support for configurable hyperparameters via command-line arguments. It logs training, validation, and test metrics to Weights & Biases (W&B) and supports data augmentation, layer freezing, and stratified train-validation splitting.
