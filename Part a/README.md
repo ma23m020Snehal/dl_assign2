@@ -70,17 +70,32 @@ this can be run with the help of command below
    Each row corresponds to one class, Each column shows a sample image with the predicted label ,The visualization is logged to W&B via `wandb.Image(fig)`
 
 #  Best hyperparametrs obtained :
-- num_filters =	64
-- filter_org = double
-- act_fn = GELU
-- dropout_rate = 0.3
-- batch_norm = True
-- data_augmentation = True
-- num_neurons = 256
-- learning_rate = 0.001
-- batch_size = 64
-- kernel_size = [3, 5, 5, 7, 7]
-- l2_reg = 0.0005
-- epochs = 20
+
+- Number of filters :  64
+
+- Filter organization:  "double"
+
+- Activation: values=  "silu"
+
+- Batch normalization: True
+
+- Dropout rate:  0
+
+- Number of neurons in dense layer (num_neurons) :  128
+
+- Data Augmentation : False
+
+- Learning Rate : values = 0.0001
+
+- Batch Size : values = 64
+
+- Kernel Size : values =  [7, 7, 7, 7, 7]
+
+- L2 regularisation :  values =  0.05
+
+- Epochs : values = 20
+
+
+
 
 # Test accuracy obtained : 34.90%
