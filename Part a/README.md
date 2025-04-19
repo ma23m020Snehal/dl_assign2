@@ -106,4 +106,4 @@ this can be run with the help of command below
 
 
 
-# Test accuracy obtained : 34.90%
+# Test accuracy obtained : 35.60%
