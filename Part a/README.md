@@ -22,7 +22,6 @@
 ### Configurable Parameters:
 - Number of filters: `num_filters` (same or variable across layers) ; "values"= [32, 64, 128] 
 - Filter organization: `same`, `double`, `half` ;  values = ["same", "double", "half"]
-- Kernel sizes: `kernel_size`
 - Activation: `act_fn` ; "values"= ["relu", "gelu", "silu", "mish", "tanh"] 
 - Batch normalization: `Yes/No` ;  "values" = [True, False]
 - Dropout rate: `dropout_rate` ;  "values" = [0, 0.2, 0.3, 0.5]

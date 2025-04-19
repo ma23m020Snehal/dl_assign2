@@ -86,5 +86,14 @@ to override the values of hyperparamters
 ```python train.py --lr 0.0002 --epochs 20 --data_aug no --wandb_project fine-tune-inaturalist --wandb_snehalma23m020-iit-madras```
 
 
+# best hyperparamaters obtained from this are :
+- batch size=64
+- data_augmentation = no 
+- epochs = 15
+- freeze ratio = 0.8
+- l2_reg = 0.0001
+- model=resnet 50
+ 
+
 # test accuracy obtained :
 Test Accuracy: 0.7770
