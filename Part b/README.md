@@ -11,7 +11,6 @@ The workflow includes setting up the environment, loading data, modifying archit
 To use transfer learning by fine-tuning a model pre-trained on ImageNet to classify images from the iNaturalist dataset, using the best hyperparameters obtained from the sweeps.
 
 
-
 ## Requirements
 
 - Python ≥ 3.7
@@ -73,3 +72,16 @@ Run the notebook using `Kaggle` or any Jupyter environment.
     metric: Validation accuracy
     goal: Maximize }
 Maximum validation accuracy: 78.58929 %  over 31 epochs
+
+
+## trainb.py file 
+fine-tuned a pretrained ResNet50 model on the iNaturalist dataset using PyTorch, with support for configurable hyperparameters via command-line arguments. It logs training, validation, and test metrics to Weights & Biases (W&B) and supports data augmentation, layer freezing, and stratified train-validation splitting.
+
+# To run trainb.py :
+
+with default values :
+```python train.py --wandb_snehalma23m020-iit-madras```
+
+to override the values of hyperparamters
+```python train.py --lr 0.0002 --epochs 20 --data_aug no --wandb_project fine-tune-inaturalist --wandb_snehalma23m020-iit-madras```
+
