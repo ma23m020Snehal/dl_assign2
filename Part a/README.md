@@ -44,7 +44,15 @@
 ├── val/     ← Used only as the test set (never used during tuning)
 ```
 
----
+## Code organisation 
+```
+/Part a/
+├── README.md                     # Description and hyperparameter info for Part A
+├── parta-test.ipynb              # Notebook for final evaluation and visualization
+├── parta-train.ipynb             # experiments
+└── traina.py                     # Main training script using CLI argparse
+```
+
 
 ## Library Dependencies
 
