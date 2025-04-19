@@ -85,3 +85,6 @@ with default values :
 to override the values of hyperparamters
 ```python train.py --lr 0.0002 --epochs 20 --data_aug no --wandb_project fine-tune-inaturalist --wandb_snehalma23m020-iit-madras```
 
+
+# test accuracy obtained :
+Test Accuracy: 0.7770
