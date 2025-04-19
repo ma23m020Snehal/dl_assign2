@@ -56,6 +56,11 @@
 - matplotlib
 - Kaggle environment (optional)
 
+# traina.py file
+this can be run with the help of command below
+```python train.py --wandb_project DL_assignment_2_eval --wandb_snehalma23m020-iit-madras```
+
+
 # Testing
 - After identifying the best config, the model is retrained and evaluated on:
   - Training Set
